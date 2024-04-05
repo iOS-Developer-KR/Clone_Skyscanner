@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "a-vertical-shot-of-a-street-in-downtown-san-francisco-california-on-a-sunny-day-2J2BJNF.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}
