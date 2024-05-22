@@ -11,7 +11,6 @@ import CoreLocation
 struct CustomTextfieldStyle: TextFieldStyle {
     
     func _body(configuration: TextField<Self._Label>) -> some View {
-        // 텍스트필드
         configuration
             .textFieldStyle(.roundedBorder)
             .autocorrectionDisabled()
