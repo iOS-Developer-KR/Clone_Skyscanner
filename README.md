@@ -15,18 +15,17 @@
 
   - 공공데이터 포털에서 제공하는 한국공항공사_항공기운항정보 API를 이용하였습니다.
   - https://www.data.go.kr/iim/api/selectAPIAcountView.do
+
+
+<h2>UI</h2>
+
 <div align="center">
-  <img width="70%" src="https://github.com/LouiIII3/Social_media_project/assets/119919129/7b419e28-3d95-4497-ab24-b5ffbf898d54"/>
+  <img width="70%" src="https://github.com/iOS-Developer-KR/Clone_Skyscanner/blob/main/images/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202024-05-22%20at%2020.45.22.png"/>
 </div>
+- 메인 뷰에서는 SkyScanner의 메인 뷰를 Clone하였습니다. (현재 화면에 나타나있는 호텔, 렌터카 등은 구현하지 않았습니다)
 <br>
 <br>
-  - 회원가입 창은 ID, 이메일 확인 및 발송, 인증코드 확인, 패스워드, 닉네임 등의 양식으로 이루어져 있습니다.
+  - 
 <div align="center">
-  <img width="70%" src="https://github.com/LouiIII3/Social_media_project/assets/119919129/7f635c2f-b551-49ff-b368-519ea24577eb"/>
-</div>
-<br>
-<br>
-  - 로그인 창에는 ID와 패스워드 입력란이 있으며, 비밀번호를 잊은 경우와 회원가입할 수 있는 버튼도 포함되어 있습니다. (현재 페이스북 연결 옵션은 서버와에 구현하지 않았습니다.)
-<div align="center">
-  <img width="40%" src="https://github.com/LouiIII3/Social_media_project/assets/119919129/4c7b1b12-176a-432e-b73f-0101e8a16f5d"/>
+  <img width="40%" src=""/>
 </div>
