@@ -118,4 +118,7 @@ if flightModel.gettingData {
 }
 ```
 
-
+<h2>결과물</h2>
+<div align="center">
+  <img src="https://github.com/iOS-Developer-KR/Clone_Skyscanner/blob/main/images/Simulator%20Screen%20Recording%20-%20iPhone%2015%20Pro%20-%202024-05-22%20at%2023.41.07.gif" width="300" height="600"/>
+</div>
