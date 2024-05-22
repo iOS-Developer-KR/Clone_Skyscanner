@@ -14,7 +14,7 @@ struct MainHeaderView: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: 50, height: 50)
-            Text("Incheon Airport Project")
+            Text("Incheon Airport")
                 .font(.title)
                 .bold()
             
