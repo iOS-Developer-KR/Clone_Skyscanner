@@ -20,7 +20,7 @@
 <h2>UI</h2>
 
 <div align="center">
-  <img width="70%" src="https://github.com/iOS-Developer-KR/Clone_Skyscanner/blob/main/images/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202024-05-22%20at%2020.45.22.png"/>
+  <img width="70%" src="https://github.com/iOS-Developer-KR/Clone_Skyscanner/blob/main/images/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202024-05-22%20at%2020.45.22.png" width="200" height="400"/>
 </div>
 - 메인 뷰에서는 SkyScanner의 메인 뷰를 Clone하였습니다. (현재 화면에 나타나있는 호텔, 렌터카 등은 구현하지 않았습니다)
 <br>
