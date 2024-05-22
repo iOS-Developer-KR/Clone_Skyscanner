@@ -16,10 +16,8 @@ struct FindingAirportView: View {
     var departureView: Bool
     
     func fetch() {
-        print("가져오기 시도")
         if flightModel.departureCity.cityName != "" && flightModel.arrivalCity.cityName != "" {
             flightModel.gettingData = true
-            print("가져오기")
             if departureView {
                 flightVM.FetchData(url: IncheonConstData().departureURL!) { result in
                     if let data = result?.response.body.items {
@@ -36,11 +34,13 @@ struct FindingAirportView: View {
                 }
             }
         }
+        dismiss()
     }
+    
     
     var body: some View {
         ZStack {
-            Color.black
+            Color.background.ignoresSafeArea()
             VStack {
                 HStack {
                     Button(action: {
@@ -58,18 +58,16 @@ struct FindingAirportView: View {
                     Spacer()
                 }.padding()
                 
-                TextField("국가, 도시 또는 공항", text: $textfield)
+                SearchBar(text: $textfield)
                     .padding([.horizontal, .bottom])
                 
                 ScrollView {
                     ForEach(AllAirports.filter({ Airport in
-                        // 만약 출발하는 곳이라면 전체 공항에서 도착 공항이랑 같으면 안된다                             만약 도착하는 곳이라면 출발하는 곳과 같으면 안된다
-                        departureView ? Airport.cityName != flightModel.arrivalCity.cityName : Airport.cityName != flightModel.departureCity.cityName
+                        (departureView ? Airport.cityName != flightModel.arrivalCity.cityName : Airport.cityName != flightModel.departureCity.cityName) && (Airport.cityName.hasPrefix(textfield) || Airport.cityCode.hasPrefix(textfield))
                     })) { airport in
                         Button(action: {
                             departureView ? (flightModel.departureCity = airport) : (flightModel.arrivalCity = airport)
                             fetch()
-                            dismiss()
                         }, label: {
                             VStack {
                                 HStack {
@@ -101,4 +99,32 @@ struct FindingAirportView: View {
 #Preview {
     FindingAirportView(departureView: false)
         .environment(FlightInfoModel())
+}
+
+
+
+struct SearchBar: View {
+    
+    @Binding var text: String
+
+    var body: some View {
+        HStack {
+                TextField("출발지 국가, 도시 또는 공항", text: $text)
+                    .foregroundColor(.primary)
+
+                if !text.isEmpty {
+                    Button(action: {
+                        self.text = ""
+                    }) {
+                        Image(systemName: "xmark.circle.fill")
+                    }
+                } else {
+                    EmptyView()
+                    
+                }
+            }
+            .padding(EdgeInsets(top: 4, leading: 8, bottom: 4, trailing: 8))
+            .foregroundColor(.secondary)
+            .background(Color(.skyColor2))
+    }
 }

@@ -16,13 +16,14 @@ struct FlightViewContainer: View {
     
     var body: some View {
         NavigationStack {
-            VStack {
-                SelectingMethodView(selected: $selected)
-                SelectingDestinationView(departureView: $departureView)
-//                if !departure.cityCode.isEmpty && !arrival.cityCode.isEmpty {
+            ZStack {
+                Color.background.ignoresSafeArea()
+                VStack {
+                    SelectingMethodView(selected: $selected)
+                    SelectingDestinationView(departureView: $departureView)
                     FlightListView(departureView: $departureView)
-//                }
-                Spacer()
+                    Spacer()
+                }
             }
         }
     }

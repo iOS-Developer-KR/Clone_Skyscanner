@@ -45,8 +45,11 @@ struct FlightInfoView: View {
                     Spacer()
                     
                 }
-            }.padding(.horizontal)
-        }).foregroundStyle(Color.white)
+            }
+            .padding(.all)
+
+        })
+        .foregroundStyle(Color.white)
     }
 }
 

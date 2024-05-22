@@ -16,7 +16,6 @@ struct CustomTextfieldStyle: TextFieldStyle {
             .textFieldStyle(.roundedBorder)
             .autocorrectionDisabled()
             .textInputAutocapitalization(.never)
-            .border(Color.black, width: 0.5)
             .disabled(true)
     }
 }

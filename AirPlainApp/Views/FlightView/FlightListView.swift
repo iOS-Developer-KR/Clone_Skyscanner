@@ -13,9 +13,7 @@ struct FlightListView: View {
     
     @Environment(FlightInfoModel.self) var flightModel
     @Binding var departureView: Bool
-    var FlightVM = FlightStateViewModel()
-//    private let animationView = LottieView(jsonName: "animation.json")
-    
+    var FlightVM = FlightStateViewModel()    
     
     var body: some View {
         Spacer()
@@ -35,10 +33,9 @@ struct FlightListView: View {
                                 Spacer()
                             }
                             ForEach(flights, id: \.self) { flight in
-
+                                Divider()
                                 FlightInfoView(flight: flight)
                                 Divider()
-                                
                             }
                         }
                     } else {

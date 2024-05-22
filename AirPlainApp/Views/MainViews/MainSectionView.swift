@@ -11,6 +11,7 @@ struct MainSectionView: View {
     @Environment(Navigation.self) var navigationPath
     
     var body: some View {
+//        ZStack {
         HStack {
             NavigationLink {
                 FlightViewContainer()
@@ -63,19 +64,17 @@ struct MainSectionView: View {
             .padding()
         }
         .navigationDestination(for: String.self) { des in
-            //            if des == "FlightViewContainer" {
             FlightViewContainer()
-            //            }
         }
+        .background(Color.background)
+
+
     }
 }
 
 
 
 #Preview {
-//    @Environment(Navigation.self) var navigationPath
-
-//    @Bindable var path = navigationPath
     NavigationStack() {
         MainSectionView()
             .environment(FlightInfoModel())
