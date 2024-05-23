@@ -6,13 +6,13 @@
   
   - <b>공항을 이용하기 위해서는 매번 출도착 시간을 확인해야 하는데 실시간을 게이트가 바뀌고 지연될 수 있기 때문에 이런 변경 사항들을 확인할 수 있도록 만들었습니다.    
 
-<h2>사용한 API</h2>
+##사용한 API
 
   - 공공데이터 포털에서 제공하는 한국공항공사_항공기운항정보 API를 이용하였습니다.
   - https://www.data.go.kr/iim/api/selectAPIAcountView.do
 
 
-<h2>UI</h2>
+##UI
 
 <div align="center">
   <img src="https://github.com/iOS-Developer-KR/Clone_Skyscanner/blob/main/images/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202024-05-22%20at%2020.45.22.png" width="300" height="600"/>
@@ -26,7 +26,7 @@
 - 항공편을 검색하기 위한 뷰로 만약 출발지와 도착지를 지정하게 된다면 flightModel의 gettingData값을 토글시켜 원하는 항공편을 검색할 수 있게 됩니다
 
 
-<h2>통신코드</h2>
+##통신코드
 다음으로는 Alamofire 라이브러리를 이용한 API 데이터를 가져오는 코드입니다.
 
 ```swift
