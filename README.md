@@ -2,17 +2,17 @@
 
 ### 인천공항 출도착 확인 가능 앱
 
-  앱을 제작하게된 배경
+<h2>앱을 제작하게된 배경</h2>
   
-  - <b>공항을 이용하기 위해서는 매번 출도착 시간을 확인해야 하는데 실시간을 게이트가 바뀌고 지연될 수 있기 때문에 이런 변경 사항들을 확인할 수 있도록 만들었습니다.    
+공항을 이용하기 위해서는 매번 출도착 시간을 확인해야 하는데 실시간을 게이트가 바뀌고 지연될 수 있기 때문에 이런 변경 사항들을 확인할 수 있도록 만들었습니다.    
 
-##사용한 API
 
+<h2>사용한 API</h2>
   - 공공데이터 포털에서 제공하는 한국공항공사_항공기운항정보 API를 이용하였습니다.
   - https://www.data.go.kr/iim/api/selectAPIAcountView.do
 
 
-##UI
+<h2>UI</h2>
 
 <div align="center">
   <img src="https://github.com/iOS-Developer-KR/Clone_Skyscanner/blob/main/images/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202024-05-22%20at%2020.45.22.png" width="300" height="600"/>
